@@ -32,6 +32,8 @@ interval = np.linspace(1, df.K3PO4.max())
 
 
 app = dash.Dash(__name__)
+server = app.server
+port = int(os.environ.get("PORT", 5000))
 
 app.layout = html.Div(
                   children = [ # title
