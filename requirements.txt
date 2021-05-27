@@ -1,0 +1,12 @@
+dash
+dash-renderer
+dash-core-components
+dash-html-components
+plotly
+plotly-express
+pandas
+numpy
+scipy
+chart_studio
+gunicorn
+statsmodels
