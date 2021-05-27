@@ -1,1 +1,1 @@
-web: gunicorn oligo:server
+web: gunicorn emul:server
