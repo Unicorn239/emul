@@ -97,6 +97,9 @@ def update_graph(value_buf, clicks_clr):
                         line = {'width' : 1} 
                           )
     figure = go.Figure(trace)
+    figure.layout.title = 'Prediction of likelihood of not having an emulsion'
+    figure.layout.xaxis.title = 'K3PO4 stoichiometry'
+    figure.layout.yaxis.title = 'Likelihood of no emulsion'
             
     if clicks_clr is None:
         return figure, None
