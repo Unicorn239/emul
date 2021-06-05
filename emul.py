@@ -43,14 +43,22 @@ app.layout = html.Div(
                   html.Div(
                        children = [  # this container is to host control components
                                     html.H3('Select buffer volume - '),
-                                    dcc.Slider(
-                                                id = 'slider_buffer',
-                                                min = 0,
-                                                max = 2,
-                                                value = 1,
-                                                step = 0.1,
-                                                tooltip = {'always_visible' : True}
-                                                     ),
+                                    html.Div(
+                                             [
+                                               dcc.Slider(
+                                                          id = 'slider_buffer',
+                                                          min = 0,
+                                                          max = 2,
+                                                          value = 1,
+                                                          step = 0.1,
+                                                          tooltip = {'always_visible' : True}
+                                                         )
+                                             ],
+                                               style = {
+                                                         'width' : '50%',
+                                                         'align-items' : 'left'
+                                                       }
+                                             ),
                                     html.Button(
                                                  'Clear',
                                                  id = 'button_clr',
