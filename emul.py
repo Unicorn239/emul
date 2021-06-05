@@ -55,7 +55,7 @@ app.layout = html.Div(
                                                          )
                                              ],
                                                style = {
-                                                         'width' : '65%',
+                                                         'width' : '70%',
                                                          'align-items' : 'left'
                                                        }
                                              ),
